@@ -65,10 +65,32 @@ describe('subtract', () => {
 });
 
 describe('multiply', () => {
+  test('can multiply two positive numbers', () => {
+    const expected =28;
+    const actual = calculator.multiply(7, 4);
+    expect(actual).toBe(expected);
+  });
+
+  test('can multiply two negative numbers', () => {
+    const expected = 55;
+    const actual = calculator.multiply(-5,-11);
+    expect(actual).toBe(expected);
+  });
 
 });
 
 describe('divide', () => {
+  test('can divide two positive numbers', () => {
+    const expected =6;
+    const actual = calculator.divide(36, 6);
+    expect(actual).toBe(expected);
+  });
+
+  test('can divide two negative numbers', () => {
+    const expected = 5;
+    const actual = calculator.divide(-25,-5);
+    expect(actual).toBe(expected);
+  });
 
 });
 
